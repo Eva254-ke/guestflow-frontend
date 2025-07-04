@@ -229,6 +229,7 @@ const CheckoutScreen = ({
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState('');
   const [polling, setPolling] = useState(false);
+  // eslint-disable-next-line no-unused-vars
   const [checkoutRequestId, setCheckoutRequestId] = useState(null);
   const pollTimeout = useRef(null);
   const amount = room.total_price || room.base_price || 0;
