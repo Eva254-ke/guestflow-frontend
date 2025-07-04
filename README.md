@@ -1,3 +1,14 @@
+# GuestFlow Business Microsite
+
+## 🚀 Quick Access
+
+Scan the QR code below to instantly view the live microsite for this business.  
+Each business added via the Django admin panel gets its own unique microsite and QR code.
+
+![Scan this QR code to access the business microsite](./public/qrcode.png)
+
+---
+
 # 🌍 GuestFlow Frontend – Modal-Based Booking UI
 
 This is the React frontend for **GuestFlow**, a mobile-first hotel and Airbnb booking engine. Guests book rooms via a seamless modal overlay—no redirects, no apps, no websites required.
