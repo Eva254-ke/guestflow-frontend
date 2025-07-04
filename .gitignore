@@ -1,0 +1,30 @@
+# Ignore everything by default
+/*
+
+# Allow only these files/folders to be tracked
+!/.gitignore
+!/src/
+!/public/
+!/package.json
+!/package-lock.json
+!/README.md
+
+# Node modules and build output
+/node_modules/
+/dist/
+/build/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.env
+.env.*
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Misc
+*.log

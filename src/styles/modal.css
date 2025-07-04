@@ -1,0 +1,76 @@
+.modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0; right: 0; bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Prevent outer scroll */
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  width: 100%;
+  max-width: 440px;
+  min-width: 0;
+  max-height: 96vh;
+  height: auto;
+  margin: 4vh auto;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+  animation: modalSlideIn 0.25s cubic-bezier(.4,0,.2,1);
+  box-sizing: border-box;
+  transition: max-width 0.2s, border-radius 0.2s;
+}
+
+@keyframes modalSlideIn {
+  from { transform: translateY(40px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+
+/* Sidebar inside modal */
+.booking-sidebar-inside-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 2;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  font-size: 2rem;
+  color: #888;
+  cursor: pointer;
+  z-index: 10;
+  background: none;
+  border: none;
+  transition: color 0.2s;
+}
+.close:hover {
+  color: #1976d2;
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .modal-content {
+    width: 100vw;
+    max-width: 100vw;
+    min-height: 100vh;
+    max-height: 100vh;
+    border-radius: 0;
+    margin: 0;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+  }
+}
