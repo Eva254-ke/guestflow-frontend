@@ -8,6 +8,7 @@
 !/package.json
 !/package-lock.json
 !/README.md
+!/vercel.json
 
 # Node modules and build output
 /node_modules/
