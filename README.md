@@ -5,7 +5,7 @@
 Scan the QR code below to instantly view the live microsite for this business.  
 Each business added via the Django admin panel gets its own unique microsite and QR code.
 
-![Scan this QR code to access the business microsite](./public/qrcode.png)
+<img src="./public/qrcode.png" alt="Scan this QR code to access the business microsite" width="200" />
 
 ---
 
